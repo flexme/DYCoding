@@ -1,0 +1,8 @@
+*.DS_Store
+
+# Xcode files
+*.pbxuser
+!default.pbxuser
+xcuserdata
+DerivedData
+xcuserdata/*
