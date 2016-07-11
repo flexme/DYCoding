@@ -30,7 +30,7 @@ DY_CLASS_IMPL
 You can refer the unit tests in [DYCodingTests.m](https://github.com/flexme/DYCoding/blob/master/DYCodingTests/DYCodingTests.m) for the examples. 
 
 # Installation
-There are three ways to use SDWebImage in your project:
+There are three ways to use DYCoding in your project:
 
 * Importing the project to your workspace as a static library
 * Copying all the files into your project
@@ -46,3 +46,7 @@ This library supports dynamically encode/decode the object which contains the fo
 # Performance
 
 Although the encoding/decoding happens dynamically, it's performance should be **as fast as** the precompiled code due to the optimizations we have done. We are not doing the expensive reflection operation (`class_copyIvarList`) everytime, instead we only do it once per class, then use `imp_implementationWithBlock` and `class_addMethod` to add the implementation to the class. 
+
+# Licenses
+
+All source code is licensed under the [MIT License](https://github.com/flexme/DYCoding/blob/master/LICENSE).
