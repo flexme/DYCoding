@@ -6,7 +6,7 @@
 //  Copyright © 2016 KunChen. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for DYCoding.
 FOUNDATION_EXPORT double DYCodingVersionNumber;
