@@ -10,7 +10,9 @@
 
 #import <objc/runtime.h>
 
+#if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
+#endif
 
 #define IVAR_KEY(ivar) ([NSString stringWithCString:ivar_getName(ivar) encoding:NSUTF8StringEncoding])
 #define IVAR_PRIMITIVE_POINTER(object, ivar, type) ((type *)(((char *)((__bridge void *)object)) + ivar_getOffset(ivar)))
@@ -65,12 +67,23 @@ DEF_PRIMITIVE_ENCODE_FUNC(long long, encodeInt64)
 DEF_PRIMITIVE_ENCODE_FUNC(float, encodeFloat)
 DEF_PRIMITIVE_ENCODE_FUNC(double, encodeDouble)
 DEF_PRIMITIVE_ENCODE_FUNC(BOOL, encodeBool)
+DEF_STRUCT_ENCODE_FUNC(NSRange, NSStringFromRange)
+
+#if TARGET_OS_IPHONE
 DEF_STRUCT_ENCODE_FUNC(CGPoint, NSStringFromCGPoint)
 DEF_STRUCT_ENCODE_FUNC(CGSize, NSStringFromCGSize)
 DEF_STRUCT_ENCODE_FUNC(CGRect, NSStringFromCGRect)
-DEF_STRUCT_ENCODE_FUNC(NSRange, NSStringFromRange)
-DEF_STRUCT_ENCODE_FUNC(UIOffset, NSStringFromUIOffset)
 DEF_STRUCT_ENCODE_FUNC(UIEdgeInsets, NSStringFromUIEdgeInsets)
+DEF_STRUCT_ENCODE_FUNC(UIOffset, NSStringFromUIOffset)
+#endif
+
+#if TARGET_OS_MAC
+#if !TARGET_IPHONE_SIMULATOR
+DEF_STRUCT_ENCODE_FUNC(CGPoint, NSStringFromPoint)
+DEF_STRUCT_ENCODE_FUNC(CGSize, NSStringFromSize)
+DEF_STRUCT_ENCODE_FUNC(CGRect, NSStringFromRect)
+#endif
+#endif
 
 template <typename T>
 void Decode(NSCoder *aDecoder, id object, Ivar ivar)
@@ -89,12 +102,24 @@ DEF_PRIMITIVE_DECODE_FUNC(long long, decodeInt64ForKey)
 DEF_PRIMITIVE_DECODE_FUNC(float, decodeFloatForKey)
 DEF_PRIMITIVE_DECODE_FUNC(double, decodeDoubleForKey)
 DEF_PRIMITIVE_DECODE_FUNC(BOOL, decodeBoolForKey)
+DEF_STRUCT_DECODE_FUNC(NSRange, NSRangeFromString)
+
+#if TARGET_OS_IPHONE
 DEF_STRUCT_DECODE_FUNC(CGPoint, CGPointFromString)
 DEF_STRUCT_DECODE_FUNC(CGSize, CGSizeFromString)
 DEF_STRUCT_DECODE_FUNC(CGRect, CGRectFromString)
-DEF_STRUCT_DECODE_FUNC(NSRange, NSRangeFromString)
 DEF_STRUCT_DECODE_FUNC(UIOffset, UIOffsetFromString)
 DEF_STRUCT_DECODE_FUNC(UIEdgeInsets, UIEdgeInsetsFromString)
+#endif
+
+#if TARGET_OS_MAC
+#if !TARGET_IPHONE_SIMULATOR
+DEF_STRUCT_DECODE_FUNC(CGPoint, NSPointFromString)
+DEF_STRUCT_DECODE_FUNC(CGSize, NSSizeFromString)
+DEF_STRUCT_DECODE_FUNC(CGRect, NSRectFromString)
+#endif
+#endif
+
 
 inline encode_func GetEncodeFuncForIvar(Ivar ivar)
 {
@@ -126,9 +151,11 @@ return &Encode<structType>;\
   RETURN_FOR_STRUCT(CGPoint, CGPoint)
   RETURN_FOR_STRUCT(CGSize, CGSize)
   RETURN_FOR_STRUCT(CGRect, CGRect)
-  RETURN_FOR_STRUCT(_NSRange, NSRange)
+#if TARGET_OS_IPHONE
   RETURN_FOR_STRUCT(UIOffset, UIOffset)
   RETURN_FOR_STRUCT(UIEdgeInsets, UIEdgeInsets)
+#endif
+  RETURN_FOR_STRUCT(_NSRange, NSRange)
   
   NSCAssert(NO, @"The type %s is not supported", type);
   return NULL;
@@ -165,9 +192,11 @@ return &Decode<structType>;\
   RETURN_FOR_STRUCT(CGPoint, CGPoint)
   RETURN_FOR_STRUCT(CGSize, CGSize)
   RETURN_FOR_STRUCT(CGRect, CGRect)
-  RETURN_FOR_STRUCT(_NSRange, NSRange)
+#if TARGET_OS_IPHONE
   RETURN_FOR_STRUCT(UIOffset, UIOffset)
   RETURN_FOR_STRUCT(UIEdgeInsets, UIEdgeInsets)
+#endif
+  RETURN_FOR_STRUCT(_NSRange, NSRange)
   
   NSCAssert(NO, @"The type %s is not supported", type);
   return NULL;

@@ -32,9 +32,15 @@ You can refer the unit tests in [DYCodingTests.m](https://github.com/flexme/DYCo
 # Installation
 There are three ways to use DYCoding in your project:
 
-* Importing the project to your workspace as a static library
+* Importing the project to your workspace, add the corresponding target to your project as a static library
 * Copying all the files into your project
 * ~~Using CocoaPods (Will be Supported Soon)~~
+
+# Supported Platforms
+* iOS
+* OS X
+* watchOS
+* tvOS
 
 # Supported Property Types
 

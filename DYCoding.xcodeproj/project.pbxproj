@@ -14,6 +14,21 @@
 		860157401D343D6000C76FCE /* NSObject+DYCoding.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8601573F1D343D6000C76FCE /* NSObject+DYCoding.mm */; };
 		862BE97C1D344520007A54A8 /* DYCodingObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 862BE97A1D344520007A54A8 /* DYCodingObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		862BE97D1D344520007A54A8 /* DYCodingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 862BE97B1D344520007A54A8 /* DYCodingObject.m */; };
+		86C2BC5B1D3734C40052C94C /* DYCodingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 862BE97B1D344520007A54A8 /* DYCodingObject.m */; };
+		86C2BC5C1D3734C40052C94C /* NSObject+DYCoding.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8601573F1D343D6000C76FCE /* NSObject+DYCoding.mm */; };
+		86C2BC5D1D3734D30052C94C /* DYCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 860157241D343AE800C76FCE /* DYCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86C2BC5E1D3734D30052C94C /* DYCodingObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 862BE97A1D344520007A54A8 /* DYCodingObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86C2BC5F1D3734D30052C94C /* NSObject+DYCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 8601573B1D343B4500C76FCE /* NSObject+DYCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86C2BC801D37387E0052C94C /* DYCodingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 862BE97B1D344520007A54A8 /* DYCodingObject.m */; };
+		86C2BC811D37387E0052C94C /* NSObject+DYCoding.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8601573F1D343D6000C76FCE /* NSObject+DYCoding.mm */; };
+		86C2BC821D3738830052C94C /* DYCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 860157241D343AE800C76FCE /* DYCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86C2BC831D3738830052C94C /* DYCodingObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 862BE97A1D344520007A54A8 /* DYCodingObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86C2BC841D3738830052C94C /* NSObject+DYCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 8601573B1D343B4500C76FCE /* NSObject+DYCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86C2BC921D3738C40052C94C /* DYCodingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 862BE97B1D344520007A54A8 /* DYCodingObject.m */; };
+		86C2BC931D3738C40052C94C /* NSObject+DYCoding.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8601573F1D343D6000C76FCE /* NSObject+DYCoding.mm */; };
+		86C2BC941D3738C90052C94C /* DYCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 860157241D343AE800C76FCE /* DYCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86C2BC951D3738C90052C94C /* DYCodingObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 862BE97A1D344520007A54A8 /* DYCodingObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86C2BC961D3738C90052C94C /* NSObject+DYCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 8601573B1D343B4500C76FCE /* NSObject+DYCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +52,12 @@
 		8601573F1D343D6000C76FCE /* NSObject+DYCoding.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSObject+DYCoding.mm"; sourceTree = "<group>"; };
 		862BE97A1D344520007A54A8 /* DYCodingObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYCodingObject.h; sourceTree = "<group>"; };
 		862BE97B1D344520007A54A8 /* DYCodingObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYCodingObject.m; sourceTree = "<group>"; };
+		86C2BC531D37347C0052C94C /* DYCodingOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DYCodingOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86C2BC571D37347C0052C94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86C2BC781D37385F0052C94C /* DYCodingWatchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DYCodingWatchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86C2BC7C1D37385F0052C94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86C2BC8A1D3738B40052C94C /* DYCodingTVOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DYCodingTVOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86C2BC8E1D3738B40052C94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +76,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		86C2BC4F1D37347C0052C94C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86C2BC741D37385F0052C94C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86C2BC861D3738B40052C94C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,7 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				860157231D343AE800C76FCE /* DYCoding */,
+				86C2BC541D37347C0052C94C /* DYCodingOSX */,
 				8601572F1D343AE800C76FCE /* DYCodingTests */,
+				86C2BC791D37385F0052C94C /* DYCodingWatchOS */,
+				86C2BC8B1D3738B40052C94C /* DYCodingTVOS */,
 				860157221D343AE800C76FCE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +117,9 @@
 			children = (
 				860157211D343AE800C76FCE /* DYCoding.framework */,
 				8601572B1D343AE800C76FCE /* DYCodingTests.xctest */,
+				86C2BC531D37347C0052C94C /* DYCodingOSX.framework */,
+				86C2BC781D37385F0052C94C /* DYCodingWatchOS.framework */,
+				86C2BC8A1D3738B40052C94C /* DYCodingTVOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +146,30 @@
 			path = DYCodingTests;
 			sourceTree = "<group>";
 		};
+		86C2BC541D37347C0052C94C /* DYCodingOSX */ = {
+			isa = PBXGroup;
+			children = (
+				86C2BC571D37347C0052C94C /* Info.plist */,
+			);
+			path = DYCodingOSX;
+			sourceTree = "<group>";
+		};
+		86C2BC791D37385F0052C94C /* DYCodingWatchOS */ = {
+			isa = PBXGroup;
+			children = (
+				86C2BC7C1D37385F0052C94C /* Info.plist */,
+			);
+			path = DYCodingWatchOS;
+			sourceTree = "<group>";
+		};
+		86C2BC8B1D3738B40052C94C /* DYCodingTVOS */ = {
+			isa = PBXGroup;
+			children = (
+				86C2BC8E1D3738B40052C94C /* Info.plist */,
+			);
+			path = DYCodingTVOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -111,6 +183,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		86C2BC501D37347C0052C94C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86C2BC5D1D3734D30052C94C /* DYCoding.h in Headers */,
+				86C2BC5E1D3734D30052C94C /* DYCodingObject.h in Headers */,
+				86C2BC5F1D3734D30052C94C /* NSObject+DYCoding.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86C2BC751D37385F0052C94C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86C2BC821D3738830052C94C /* DYCoding.h in Headers */,
+				86C2BC831D3738830052C94C /* DYCodingObject.h in Headers */,
+				86C2BC841D3738830052C94C /* NSObject+DYCoding.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86C2BC871D3738B40052C94C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86C2BC941D3738C90052C94C /* DYCoding.h in Headers */,
+				86C2BC951D3738C90052C94C /* DYCodingObject.h in Headers */,
+				86C2BC961D3738C90052C94C /* NSObject+DYCoding.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -119,8 +221,8 @@
 			buildConfigurationList = 860157351D343AE800C76FCE /* Build configuration list for PBXNativeTarget "DYCoding" */;
 			buildPhases = (
 				8601571C1D343AE800C76FCE /* Sources */,
-				8601571D1D343AE800C76FCE /* Frameworks */,
 				8601571E1D343AE800C76FCE /* Headers */,
+				8601571D1D343AE800C76FCE /* Frameworks */,
 				8601571F1D343AE800C76FCE /* Resources */,
 			);
 			buildRules = (
@@ -150,6 +252,60 @@
 			productReference = 8601572B1D343AE800C76FCE /* DYCodingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		86C2BC521D37347C0052C94C /* DYCodingOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86C2BC5A1D37347C0052C94C /* Build configuration list for PBXNativeTarget "DYCodingOSX" */;
+			buildPhases = (
+				86C2BC4E1D37347C0052C94C /* Sources */,
+				86C2BC4F1D37347C0052C94C /* Frameworks */,
+				86C2BC501D37347C0052C94C /* Headers */,
+				86C2BC511D37347C0052C94C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DYCodingOSX;
+			productName = DYCodingOSX;
+			productReference = 86C2BC531D37347C0052C94C /* DYCodingOSX.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		86C2BC771D37385F0052C94C /* DYCodingWatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86C2BC7D1D37385F0052C94C /* Build configuration list for PBXNativeTarget "DYCodingWatchOS" */;
+			buildPhases = (
+				86C2BC731D37385F0052C94C /* Sources */,
+				86C2BC741D37385F0052C94C /* Frameworks */,
+				86C2BC751D37385F0052C94C /* Headers */,
+				86C2BC761D37385F0052C94C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DYCodingWatchOS;
+			productName = DYCodingWatchOS;
+			productReference = 86C2BC781D37385F0052C94C /* DYCodingWatchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		86C2BC891D3738B40052C94C /* DYCodingTVOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86C2BC8F1D3738B40052C94C /* Build configuration list for PBXNativeTarget "DYCodingTVOS" */;
+			buildPhases = (
+				86C2BC851D3738B40052C94C /* Sources */,
+				86C2BC861D3738B40052C94C /* Frameworks */,
+				86C2BC871D3738B40052C94C /* Headers */,
+				86C2BC881D3738B40052C94C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DYCodingTVOS;
+			productName = DYCodingTVOS;
+			productReference = 86C2BC8A1D3738B40052C94C /* DYCodingTVOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -163,6 +319,15 @@
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					8601572A1D343AE800C76FCE = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					86C2BC521D37347C0052C94C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					86C2BC771D37385F0052C94C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					86C2BC891D3738B40052C94C = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -181,6 +346,9 @@
 			targets = (
 				860157201D343AE800C76FCE /* DYCoding */,
 				8601572A1D343AE800C76FCE /* DYCodingTests */,
+				86C2BC521D37347C0052C94C /* DYCodingOSX */,
+				86C2BC771D37385F0052C94C /* DYCodingWatchOS */,
+				86C2BC891D3738B40052C94C /* DYCodingTVOS */,
 			);
 		};
 /* End PBXProject section */
@@ -194,6 +362,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		860157291D343AE800C76FCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86C2BC511D37347C0052C94C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86C2BC761D37385F0052C94C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86C2BC881D3738B40052C94C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -217,6 +406,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				860157311D343AE800C76FCE /* DYCodingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86C2BC4E1D37347C0052C94C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86C2BC5B1D3734C40052C94C /* DYCodingObject.m in Sources */,
+				86C2BC5C1D3734C40052C94C /* NSObject+DYCoding.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86C2BC731D37385F0052C94C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86C2BC801D37387E0052C94C /* DYCodingObject.m in Sources */,
+				86C2BC811D37387E0052C94C /* NSObject+DYCoding.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86C2BC851D3738B40052C94C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86C2BC921D3738C40052C94C /* DYCodingObject.m in Sources */,
+				86C2BC931D3738C40052C94C /* NSObject+DYCoding.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +593,132 @@
 			};
 			name = Release;
 		};
+		86C2BC581D37347C0052C94C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = DYCodingOSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kunchen.DYCodingOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		86C2BC591D37347C0052C94C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = DYCodingOSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kunchen.DYCodingOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		86C2BC7E1D37385F0052C94C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DYCodingWatchOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kunchen.DYCodingWatchOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		86C2BC7F1D37385F0052C94C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DYCodingWatchOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kunchen.DYCodingWatchOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		86C2BC901D3738B40052C94C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DYCodingTVOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kunchen.DYCodingTVOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		86C2BC911D3738B40052C94C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DYCodingTVOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kunchen.DYCodingTVOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -406,6 +748,30 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		86C2BC5A1D37347C0052C94C /* Build configuration list for PBXNativeTarget "DYCodingOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86C2BC581D37347C0052C94C /* Debug */,
+				86C2BC591D37347C0052C94C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		86C2BC7D1D37385F0052C94C /* Build configuration list for PBXNativeTarget "DYCodingWatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86C2BC7E1D37385F0052C94C /* Debug */,
+				86C2BC7F1D37385F0052C94C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		86C2BC8F1D3738B40052C94C /* Build configuration list for PBXNativeTarget "DYCodingTVOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86C2BC901D3738B40052C94C /* Debug */,
+				86C2BC911D3738B40052C94C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

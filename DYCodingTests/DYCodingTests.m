@@ -23,7 +23,7 @@
 @property (nonatomic, readonly, assign) long longVal;
 @property (nonatomic, readonly, assign) unsigned long uLongVal;
 @property (nonatomic, readonly, assign) long long longlongVal;
-@property (nonatomic, readonly, assign) unsigned int uLonglongVal;
+@property (nonatomic, readonly, assign) unsigned long long uLonglongVal;
 @property (nonatomic, readonly, assign) float floatVal;
 @property (nonatomic, readonly, assign) double doubleVal;
 @property (nonatomic, readonly, assign) BOOL boolVal;
