@@ -75,14 +75,10 @@ DEF_STRUCT_ENCODE_FUNC(CGSize, NSStringFromCGSize)
 DEF_STRUCT_ENCODE_FUNC(CGRect, NSStringFromCGRect)
 DEF_STRUCT_ENCODE_FUNC(UIEdgeInsets, NSStringFromUIEdgeInsets)
 DEF_STRUCT_ENCODE_FUNC(UIOffset, NSStringFromUIOffset)
-#endif
-
-#if TARGET_OS_MAC
-#if !TARGET_IPHONE_SIMULATOR
+#else
 DEF_STRUCT_ENCODE_FUNC(CGPoint, NSStringFromPoint)
 DEF_STRUCT_ENCODE_FUNC(CGSize, NSStringFromSize)
 DEF_STRUCT_ENCODE_FUNC(CGRect, NSStringFromRect)
-#endif
 #endif
 
 template <typename T>
@@ -110,14 +106,10 @@ DEF_STRUCT_DECODE_FUNC(CGSize, CGSizeFromString)
 DEF_STRUCT_DECODE_FUNC(CGRect, CGRectFromString)
 DEF_STRUCT_DECODE_FUNC(UIOffset, UIOffsetFromString)
 DEF_STRUCT_DECODE_FUNC(UIEdgeInsets, UIEdgeInsetsFromString)
-#endif
-
-#if TARGET_OS_MAC
-#if !TARGET_IPHONE_SIMULATOR
+#else
 DEF_STRUCT_DECODE_FUNC(CGPoint, NSPointFromString)
 DEF_STRUCT_DECODE_FUNC(CGSize, NSSizeFromString)
 DEF_STRUCT_DECODE_FUNC(CGRect, NSRectFromString)
-#endif
 #endif
 
 
