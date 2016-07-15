@@ -34,7 +34,14 @@ There are three ways to use DYCoding in your project:
 
 * Importing the project to your workspace, add the corresponding target to your project as a static library
 * Copying all the files into your project
-* ~~Using CocoaPods (Will be Supported Soon)~~
+* Using CocoaPods
+
+### Podfile
+```
+platform :ios, '7.0'
+pod 'DYCoding', '~>1.0'
+```
+
 
 # Supported Platforms
 * iOS
